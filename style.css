@@ -1,7 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    background: #f2f2f2;
+    z-index: 10000;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+.first-class{
+    height: 900px;
+    background: url("images/79933c957fc3f6515847a8741418f7dc.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.first-class div:last-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    padding: 60px 80px;
+    color: white;
+    z-index: 10;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 0;
+
+}
+
+.first-class h1{
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.first-class h5{
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.second-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.second-section div{
+    width: 35%;
+}
+
+.second-section div:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-section div:last-of-type img {
+    width: 500px;
+}
+
+.second-section div h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.second-section div p{
+    font-size: 16px;
+    font-weight: 300;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.second-section div button, .four-section button {
+    background-color: none;
+    border: none;
+}
+
+.second-section div button a{
+    padding: 12px 25px;
+    border: 2px solid #000;
+    display: block;
+    margin-top: 20px;
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+    transition: all .5s ease-in-out;
+}
+
+.second-section a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.third-section {
+    background-color: #35506d;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 40px 0;
+
+}
+
+.third-section h2{
+    color: #fff;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.third-section >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.third-section img {
+    width: 35vw;
+}
+
+.third-section > div> div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    gap: 30px;
+    font-weight: 300;
+}
+
+
+.third-section > div > div > div{
+    display: flex;
+    gap: 15px;
+}
+
+.third-section > div> div i{
+    font-size: 30px;
+    color: #a3b1c0;
+}
+
+.third-section h6{
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.third-section div div div p{
+    font-size: 16px;
+}
+
+.four-section {
+    background-image: url(https://images01.nicepage.com/51/b3/51b3bdc24b55471588deb60b32cb4f8f.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 100px;
+}
+
+.four-section div, .five-section div:last-of-type, .seven-section div:last-of-type, .eight-section div:last-of-type {
+    width: 47%;
+}
+
+.four-section h2, .five-section h2, .six-section h2, .seven-section h2, .eight-section h2 {
+    font-size: 38px;
+     font-weight: 400;
+     margin-bottom: 20px;
+}
+
+.four-section p, .five-section p, .seven-section p, .eight-section p{
+    font-size: 17px;
+    line-height: 1.3;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+
+.four-section a , .five-section a, .seven-section div> a, .eight-section a{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 28px;
+    border: 2px solid white;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.four-section a:hover, .five-section a:hover, .seven-section div> a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.five-section {
+    background-image: url(https://images01.nicepage.com/09/4e/094eaa3e9f0cb606bea4a5c8e9a4fca9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #fff;
+    position: relative;
+}
+
+.five-section div:last-of-type,.eight-section div:last-of-type{
+    padding-right: 120px;
+    z-index: 100;
+    text-align: end;
+}
+
+
+.five-section a{
+    padding: 15px 30px;
+}
+
+.seven-section{
+    background-image: url(https://images01.nicepage.com/c0/1b/c01bf9813a096b0c7c66353a27b6b5d2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.seven-section div{
+    z-index: 100;
+}
+
+.seven-section div:last-of-type{
+    padding-left: 120px;
+
+}
+
+.seven-section p a{
+    color: inherit;
+}
+
+.eight-section {
+    background-image: url(https://images01.nicepage.com/16/48/1648bc07fad78d3f3078278bfd2411e9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #fff;
+    position: relative;
+}
+
+.six-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+
+}
+
+.six-section h2{
+    text-align: center;
+}
+
+.six-section >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.six-section > div > div{
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.six-section img{
+width: 40vw;
+height: 29vw;
+object-fit: cover;
+}
+
+.six-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.six-section ul li{
+    display: flex;
+    gap: 10px;
+}
+
+.six-section ul li i {
+    font-size: 25px;
+}
+
+.six-section ul li h6 {
+    font-size: 20px;
+    font-family: Ubuntu, sans-serif !important;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.six-section ul li p{
+    font-size: 15px;
+    margin-bottom:10px;
+    font-weight: 300;
 }
